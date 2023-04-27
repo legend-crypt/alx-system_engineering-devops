@@ -2,7 +2,7 @@
 `DevOps` `Shell` `Bash` `Scripting`
 -----------------------------------------------------------
 
-## *This Project covers
+## * This Project covers
 - ssh-key generation
 - Loops sample
 - Variable assignment and arithmetic

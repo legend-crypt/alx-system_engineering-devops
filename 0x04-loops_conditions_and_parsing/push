@@ -1,0 +1,8 @@
+#!/usr/bin/bash
+# Script to push code to github
+
+git add .
+echo "Enter commit message"
+read -r message
+git commit -m "$message"
+git push
