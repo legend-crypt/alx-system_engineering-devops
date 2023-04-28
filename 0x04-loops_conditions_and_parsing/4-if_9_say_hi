@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# This script displays "Best School" 10 times using while
+
+print_str="Best School"
+a=0
+
+while [ $a -lt  10 ]
+do
+	echo "$print_str"
+	(( a+=1 ))
+	if [ $a == 9 ]
+	then
+		echo "Hi"
+	fi
+done

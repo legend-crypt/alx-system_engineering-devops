@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 # This script is displaying "Best School" 10 times
 
-for i in 1 2 3 4 5 6 7 8 9 10
+print_str="Best School"
+# shellcheck disable=SC2034 # unused variable left to hold count values
+for i in {1..10}
 do
-	echo "Best School"
+	echo "$print_str"
 done
