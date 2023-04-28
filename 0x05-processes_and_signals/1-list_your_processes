@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #This Bash script displays a list of currenly running process in user-oriented format
 
-ps -U root -u root u
+ps auxf
