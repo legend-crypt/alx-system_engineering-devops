@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Gives information about the holbertonschool file.
-file=holbertonschool
+file=school
 if test -e "$file"; then
 	echo "$file file exists"
 	if [ -s "$file" ]; then
