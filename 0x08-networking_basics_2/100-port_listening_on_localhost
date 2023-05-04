@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#This script open a connection port 98 for communication
+
+nc -l localhost 98
