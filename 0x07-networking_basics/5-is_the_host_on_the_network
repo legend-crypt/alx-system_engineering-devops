@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#This script pings a network using positional arguement
+ping "$1" -c 5
+
+echo "Usage: 5-is_the_host_on_the_network" "$1"
