@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#create a new RSA key pair
+
+pass = "betty"
+ssh-keygen -b 4096 -N "$pass"
