@@ -2,4 +2,4 @@
 #create a new RSA key pair
 
 pass = "betty"
-ssh-keygen -b 4096 -f school -N "$pass"
+ssh-keygen -b 4096 -f school -N $pass
