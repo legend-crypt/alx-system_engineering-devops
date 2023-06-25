@@ -1,2 +1,2 @@
 #!/bin/bash
-cat ~/.ssh/id_rsa.pub | ssh ubuntu@54.237.126.68 "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
+ssh -i ~/.ssh/school ubuntu@18.235.243.46
