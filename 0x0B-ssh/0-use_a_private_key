@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #Use ssh to connect to your server using private in ~/.ssh/school
 #user: Ubuntu
 ssh -i ~/.ssh/school ubuntu@18.235.243.46
