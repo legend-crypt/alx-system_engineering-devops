@@ -1,3 +1,4 @@
+# This manifest configures ubuntu server using nginx
 exec {'update':
   command => '/bin/apt-get update',
 }
