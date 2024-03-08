@@ -20,4 +20,3 @@ dig_domain(){
 	fi
 }
 dig_domain "$1" "$2"
-exit 0
