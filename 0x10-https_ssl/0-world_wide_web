@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# script to display domain name information
+
+dig_domain(){
+	if [ -n "$2" ];
+	then
+		
+		record=$(dig "$2"."$1" | awk 'NR==14 {print $4}')
+		ip=$(dig "$2"."$1" | awk 'NR==14 {print $NF}')
+		echo "The subdomain $2 is a $record record and points to $ip"
+	else
+		subdomains=(web-01 web-02 lb-01 www)
+		for n in "${subdomains[@]}";
+		do
+			echo " domain $n"
+			record=$(dig "$n"."$1" | awk 'NR==14 {print $4}')
+			ip=$(dig "$n"."$1" | awk 'NR==14 {print $NF}')
+			echo "The subdomain $2 is a $record record and points to $ip"
+		done
+	fi
+}
+dig_domain "$1" "$2"
+exit 0
