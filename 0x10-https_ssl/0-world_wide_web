@@ -12,10 +12,9 @@ dig_domain(){
 		subdomains=(web-01 web-02 lb-01 www)
 		for n in "${subdomains[@]}";
 		do
-			echo " domain $n"
 			record=$(dig "$n"."$1" | awk 'NR==14 {print $4}')
 			ip=$(dig "$n"."$1" | awk 'NR==14 {print $NF}')
-			echo "The subdomain $2 is a $record record and points to $ip"
+			echo "The subdomain $n is a $record record and points to $ip"
 		done
 	fi
 }
