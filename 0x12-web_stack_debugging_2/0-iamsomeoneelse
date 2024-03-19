@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Switch the current user to the user passed as argument and display the username
+
+su "$1" -c 'whoami'
