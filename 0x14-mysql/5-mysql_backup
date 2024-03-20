@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Bash script to create a db backup 
+
+if [ $# -ne 1 ]
+then
+	echo "Usage: $0 <mysql_password>"
+	exit 1
+fi
+backup_file="backup.sql"
+archive_name="$(date +'%d-%m-%Y').tar.gz"
+
+mysqldump --user=root --password="$1" -A > "$backup_file"
+tar -czf "$archive_name" "$backup_file"
+rm "$backup_file"
