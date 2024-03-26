@@ -22,7 +22,7 @@ def check_employee_task():
     for task in todo_res.json():
         if task.get("completed"):
             task_done += 1
-    print("Employee {} is done with task({}/{}):".format(
+    print("Employee {} is done with tasks({}/{}):".format(
         employee_name,
         task_done,
         total_tasks))
