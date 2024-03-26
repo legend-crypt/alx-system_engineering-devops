@@ -17,7 +17,7 @@ def to_json():
         "https://jsonplaceholder.typicode.com/todos?userId={}".format(
             user_id
         ))
-    key = f"{user_id}"
+    key = user_id
     data_obj = {}
     data = []
     for task in todo_res.json():
