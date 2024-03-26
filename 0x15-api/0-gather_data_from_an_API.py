@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """import requests to handle http request"""
+
 import requests
 from sys import argv
 
